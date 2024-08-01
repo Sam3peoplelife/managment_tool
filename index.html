@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Order Management System</h1>
+    <div class="container">
+        <div class="order-form">
+            <h2>Add Order</h2>
+            <button id="addProduct">Add Product</button>
+            <div id="productsContainer"></div>
+            <button id="uploadOrder" class="button-primary">Upload Order</button>
+        </div>
+        <div class="lines">
+            <h2>Production Lines</h2>
+            <div class="line" id="line1">
+                <h3>First Line</h3>
+                <label>
+                    Active: <input type="checkbox" id="active1" checked>
+                </label>
+                <label>
+                    People: <input type="number" id="people1" value="2">
+                </label>
+                <div class="orders" id="orders1"></div>
+            </div>
+            <div class="line" id="line2">
+                <h3>Second Line</h3>
+                <label>
+                    Active: <input type="checkbox" id="active2" checked>
+                </label>
+                <label>
+                    People: <input type="number" id="people2" value="1">
+                </label>
+                <div class="orders" id="orders2"></div>
+            </div>
+            <div class="line inactive" id="line3">
+                <h3>Third Line</h3>
+                <label>
+                    Active: <input type="checkbox" id="active3">
+                </label>
+                <label>
+                    People: <input type="number" id="people3" value="0">
+                </label>
+                <div class="orders" id="orders3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
